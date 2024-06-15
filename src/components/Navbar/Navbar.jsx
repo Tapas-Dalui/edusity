@@ -25,7 +25,7 @@ function Navbar() {
     <>
       <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
         <img src={logo} className='logo' />
-        <ul className={ mobileMenu ? '' : 'hide-mobile-menu'}>
+        <ul className={ mobileMenu ? 'hide-mobile-menu' : ''}>
           <li> <Link
             to="hero"
             spy={true}
