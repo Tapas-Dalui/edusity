@@ -32,14 +32,15 @@
     margin: 20px 0;
     list-style: none;
 }
-.contact-col ul li img{
-    width: 25px;
+.contact-col ul li .icons{
+    font-size: 20px;
     margin-right: 10px;
+    color: #00BF63;
 }
 .contact form input, .contact form textarea {
     display: block;
     width: 100%;
-    background: #ebecfe;
+    background: #e2ffe0;
     padding: 15px;
     border: 0;
     outline: 0;

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Hero.css'
-import arrow from '../../assets/dark-arrow.png'
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 function Hero() {
   return (
     <>
@@ -9,7 +10,7 @@ function Hero() {
             <h1>We ensure better education for a better world</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam minima itaque repellendus animi facere nihil nulla non dolorem saepe inventore qui repudiandae officia deserunt doloremque, tempora porro rerum voluptate.
             Tenetur, facere rem modi, dolores quidem saepe iure ducimus dolore adipisci placeat dicta iusto. Ab tempora magnam nam facilis porro temporibus optio accusantium cupiditate, ipsam, nisi, distinctio reprehenderit quisquam laborum.</p>
-            <button className='btn'>Explore More <img src={arrow} /> </button>
+            <button className='btn'>Explore More <FaLongArrowAltRight className='arrow-icon'/> </button>
 
         </div>
       </div>

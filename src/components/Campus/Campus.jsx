@@ -4,7 +4,7 @@ import gallery1 from '../../assets/gallery-1.png'
 import gallery2 from '../../assets/gallery-2.png'
 import gallery3 from '../../assets/gallery-3.png'
 import gallery4 from '../../assets/gallery-4.png'
-import white_arrow from '../../assets/white-arrow.png'
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 
 function Campus() {
@@ -17,7 +17,7 @@ function Campus() {
             <img src={gallery3} alt="" />
             <img src={gallery4} alt="" />
         </div>
-        <button className='btn dark-btn'>See More Here <img src={white_arrow} alt="" /> </button>
+        <button className='btn dark-btn'>See More Here <FaLongArrowAltRight className='arrow-icon-white' /> </button>
       </div>
 
     </>

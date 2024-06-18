@@ -1,15 +1,15 @@
 import React from 'react'
 import './Contact.css'
-import msg_icon from '../../assets/msg-icon.png'
-import mail_icon from '../../assets/mail-icon.png'
-import phone_icon from '../../assets/phone-icon.png'
-import location_icon from '../../assets/location-icon.png'
-import white_arrow from '../../assets/white-arrow.png'
+import { FaLongArrowAltRight } from "react-icons/fa"
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { FcPackage } from "react-icons/fc";
 
 
 function Contact() {
 
-    const [result, setResult] = React.useState("");
+  const [result, setResult] = React.useState("");
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -34,35 +34,35 @@ function Contact() {
     }
   };
 
-    return (
-        <>
-            <div className="contact">
-                <div className="contact-col">
-                    <h3>Send us some message <img src={msg_icon} alt="" /> </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero illo perspiciatis maxime nobis accusamus blanditiis omnis, reprehenderit id! Voluptatibus dolorem soluta odio et quod vero repudiandae sint fuga vel?
-                        Et facere aliquid voluptas consequatur eveniet harum quos, modi maxime, similique dolores culpa in, ea repudiandae veritatis deleniti! Eos cumque, ab iste possimus numquam accusantium fuga distinctio quasi delectus natus.</p>
-                    <ul>
-                        <li> <img src={mail_icon} alt='' /> admin@edusity.com</li>
-                        <li> <img src={phone_icon} alt='' />+23 111-523-853-25</li>
-                        <li> <img src={location_icon} alt='' /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque maiores doloremque iure quibusdam </li>
+  return (
+    <>
+      <div className="contact">
+        <div className="contact-col">
+          <h3>Send us some message <FcPackage /> </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero illo perspiciatis maxime nobis accusamus blanditiis omnis, reprehenderit id! Voluptatibus dolorem soluta odio et quod vero repudiandae sint fuga vel?
+            Et facere aliquid voluptas consequatur eveniet harum quos, modi maxime, similique dolores culpa in, ea repudiandae veritatis deleniti! Eos cumque, ab iste possimus numquam accusantium fuga distinctio quasi delectus natus.</p>
+          <ul>
+            <li> <MdEmail className='icons' /> admin@edusity.com</li>
+            <li> <FaPhoneAlt className='icons' /> +23 111-523-853-25</li>
+            <li> <FaLocationDot className='icons' /> Mountain View, California, USA</li>
 
-                    </ul>
-                </div>
-                <div className="contact-col">
-                    <form onSubmit={onSubmit}>
-                        <label htmlFor="">Your Name</label>
-                        <input type="text" name='name' placeholder='Enter Your Name' required />
-                        <label htmlFor="">Phone Number</label>
-                        <input type="text" name='phone' placeholder='Enter your Phone Number' required />
-                        <textarea name="message" id="" cols="30" rows="10" placeholder='Enter Your Message' required></textarea>
-                        <button type="submit" className='btn dark-btn'>Submit Now <img src={white_arrow} alt="" /></button>
-                    </form>
-                    <span>{result}</span>
-                </div>
-            </div>
+          </ul>
+        </div>
+        <div className="contact-col">
+          <form onSubmit={onSubmit}>
+            <label htmlFor="">Your Name</label>
+            <input type="text" name='name' placeholder='Enter Your Name' required />
+            <label htmlFor="">Phone Number</label>
+            <input type="text" name='phone' placeholder='Enter your Phone Number' required />
+            <textarea name="message" id="" cols="30" rows="10" placeholder='Enter Your Message' required></textarea>
+            <button type="submit" className='btn dark-btn'>Submit Now <FaLongArrowAltRight className='arrow-icon-white' /> </button>
+          </form>
+          <span>{result}</span>
+        </div>
+      </div>
 
-        </>
-    )
+    </>
+  )
 }
 
 export default Contact

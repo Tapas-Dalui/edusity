@@ -4,6 +4,8 @@
     position: relative;
 }
 .next-btn, .back-btn{
+    font-size: 50px;
+    color: #fff;
     position: absolute;
     top: 50%;
     right: 0;

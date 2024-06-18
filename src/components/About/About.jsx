@@ -1,14 +1,18 @@
 import React from 'react'
 import './About.css'
 import about from '../../assets/about.png'
-import play from '../../assets/play-icon.png'
+import { FaRegCirclePlay } from "react-icons/fa6";
+
+
+
 function About({ setPlayState }) {
   return (
     <>
       <div className="about">
         <div className="about-left">
           <img src={about} className='about-img' />
-          <img src={play} className='play-icon' onClick={() => { setPlayState(true) }} />
+          <FaRegCirclePlay className='play-icon' onClick={() => { setPlayState(true) }}/> 
+          
         </div>
         <div className="about-right">
           <h3>About University</h3>

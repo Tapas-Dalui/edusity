@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo1 from '../../assets/logo1.png'
 import logo2 from '../../assets/logo2.png'
-import menu_icon from '../../assets/menu-icon.png'
 import { Link } from 'react-scroll'
+import { FaBarsStaggered } from "react-icons/fa6";
 
 function Navbar() {
 
@@ -67,9 +67,9 @@ function Navbar() {
             spy={true}
             smooth={true}
             offset={-230}
-            duration={500} className={`${sticky ? 'btn-colored' : 'btn'}`}>Contact Us</Link></li>
+            duration={500} className={`${sticky || mobileMenu ? 'btn-colored' : 'btn'}`}>Contact Us</Link></li>
         </ul>
-        <img src={menu_icon} className='menu-icon' onClick={toggleMenu} />
+        <FaBarsStaggered className={` ${ sticky || (!sticky && mobileMenu) ? 'menu-icon-black' : 'menu-icon-white'}`}  onClick={toggleMenu}/>
       </nav>
     </>
   )
