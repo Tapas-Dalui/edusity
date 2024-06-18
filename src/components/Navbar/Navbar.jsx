@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
-import logo from '../../assets/logo.png'
+import logo1 from '../../assets/logo1.png'
+import logo2 from '../../assets/logo2.png'
 import menu_icon from '../../assets/menu-icon.png'
 import { Link } from 'react-scroll'
 
@@ -24,7 +25,7 @@ function Navbar() {
   return (
     <>
       <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
-        <img src={logo} className='logo' />
+        <img src={sticky ? logo1 : logo2} className='logo' />
         <ul className={ mobileMenu ? 'hide-mobile-menu' : ''}>
           <li> <Link
             to="hero"
@@ -66,7 +67,7 @@ function Navbar() {
             spy={true}
             smooth={true}
             offset={-230}
-            duration={500} className='btn'>Contact Us</Link></li>
+            duration={500} className={`${sticky ? 'btn-colored' : 'btn'}`}>Contact Us</Link></li>
         </ul>
         <img src={menu_icon} className='menu-icon' onClick={toggleMenu} />
       </nav>

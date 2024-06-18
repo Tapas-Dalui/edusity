@@ -39,8 +39,8 @@ function Testimonials() {
                         <div className="user-info">
                             <img src={user1} alt="" />
                             <div>
-                                <h3>William Jackson 1</h3>
-                                <span>Edusity, USA</span>
+                                <h3>MARIA</h3>
+                                <span>Eduol, USA</span>
                             </div>
                         </div>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, sint doloremque! Neque praesentium illo aliquam consectetur nulla. Reiciendis modi, quos, ducimus magnam consequatur commodi aspernatur ad fugiat aliquam illum velit!</p>
@@ -51,8 +51,8 @@ function Testimonials() {
                         <div className="user-info">
                             <img src={user2} alt="" />
                             <div>
-                                <h3>William Jackson 2</h3>
-                                <span>Edusity, USA</span>
+                                <h3>William</h3>
+                                <span>Eduol, USA</span>
                             </div>
                         </div>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, sint doloremque! Neque praesentium illo aliquam consectetur nulla. Reiciendis modi, quos, ducimus magnam consequatur commodi aspernatur ad fugiat aliquam illum velit!</p>
@@ -63,8 +63,8 @@ function Testimonials() {
                         <div className="user-info">
                             <img src={user3} alt="" />
                             <div>
-                                <h3>William Jackson 3</h3>
-                                <span>Edusity, USA</span>
+                                <h3>SARAH</h3>
+                                <span>Eduol, USA</span>
                             </div>
                         </div>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, sint doloremque! Neque praesentium illo aliquam consectetur nulla. Reiciendis modi, quos, ducimus magnam consequatur commodi aspernatur ad fugiat aliquam illum velit!</p>
@@ -75,8 +75,8 @@ function Testimonials() {
                         <div className="user-info">
                             <img src={user4} alt="" />
                             <div>
-                                <h3>William Jackson 4</h3>
-                                <span>Edusity, USA</span>
+                                <h3>Lucas</h3>
+                                <span>Eduol, USA</span>
                             </div>
                         </div>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, sint doloremque! Neque praesentium illo aliquam consectetur nulla. Reiciendis modi, quos, ducimus magnam consequatur commodi aspernatur ad fugiat aliquam illum velit!</p>
