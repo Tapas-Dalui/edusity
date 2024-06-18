@@ -30,8 +30,8 @@ function Testimonials() {
     return (
         <>
             <div className="testimonials">
-                <IoIosArrowBack className='back-btn' onClick={slideForward} />
-                <IoIosArrowForward className='next-btn' onClick={slideBackward} />
+                <IoIosArrowBack className='back-btn' onClick={slideBackward} />
+                <IoIosArrowForward className='next-btn' onClick={slideForward} />
 
                 <div className="slider">
                     <ul ref={slider}>
