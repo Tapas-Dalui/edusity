@@ -42,7 +42,7 @@ function Contact() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vero illo perspiciatis maxime nobis accusamus blanditiis omnis, reprehenderit id! Voluptatibus dolorem soluta odio et quod vero repudiandae sint fuga vel?
             Et facere aliquid voluptas consequatur eveniet harum quos, modi maxime, similique dolores culpa in, ea repudiandae veritatis deleniti! Eos cumque, ab iste possimus numquam accusantium fuga distinctio quasi delectus natus.</p>
           <ul>
-            <li> <MdEmail className='icons' /> admin@edusity.com</li>
+            <li> <MdEmail className='icons' /> admin@eduol.com</li>
             <li> <FaPhoneAlt className='icons' /> +23 111-523-853-25</li>
             <li> <FaLocationDot className='icons' /> Mountain View, California, USA</li>
 
